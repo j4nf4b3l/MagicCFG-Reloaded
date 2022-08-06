@@ -1205,26 +1205,6 @@ class ViewController: NSViewController, ORSSerialPortDelegate,NSTextFieldDelegat
         factoryResetDevice()
     }
     func factoryResetDevice() {
-        let alert = NSAlert()
-        alert.messageText = "Warning!"
-        alert.informativeText = "You are about to factory reset your device. This will erase all device content and settings. This can't be undone after restarted!\nAre you sure that you want to continue?"
-        alert.addButton(withTitle: "Yes, erase my device!")
-        alert.addButton(withTitle: "Cancel")
-        let i = alert.runModal()
-        
-        switch i {
-        case .alertFirstButtonReturn:
-            port.send("nvram --set oblit-inprogress 5".data(using: .utf8)! + Data([0x0A, 0x0D]))
-            port.send("nvram --save".data(using: .utf8)! + Data([0x0A, 0x0D]))
-            let alert = NSAlert()
-            alert.messageText = "Commands successfully sent to your iDevice! When rebooting your device, it will start to erase all contents and settings from the device.\nReboot the device now by the button in MagicCFG\nKeep the device connected to a power source and wait until it booted up successfully!"
-            alert.addButton(withTitle: "Okay")
-            alert.runModal()
-        case .alertSecondButtonReturn:
-            break
-        default:
-            break
-        }
     }
     
     
