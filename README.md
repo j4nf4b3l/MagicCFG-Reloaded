@@ -65,6 +65,19 @@ NEW FEATURES:
 * Updated devices compability (find the eastereggs :)
 * Improved purple mode...
 
+SUPPORTED MODELS:
+* iPhone 6 / 6+
+* iPhone 6S / 6S+
+* iPhone SE 1st Gen
+* iPhone 7 / 7+
+* iPhone 8 / 8+
+* iPhone X
+* iPad 5 / 6 / 7
+* iPad mini 4
+* iPad Pro 1st Gen 9,7 / 12,9
+* iPad Pro 2nd Gen 10,5 / 12,9
+* iPod touch 7
+
 The app makes it possible to read, write and restore important configuration data on iDevices, making it an important tool for hobbyists and professional repair stores. It requires no accessories except for a DCSD cable / adapter and is therefore much cheaper and faster to use than with conventional NAND programmers from the Far East.
 
 Please note that the source code doesn't include any files to boot into diags mode... You may need to add it yourself...
